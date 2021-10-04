@@ -34,6 +34,9 @@ class Rectangle:
         h_t = int(self.height / self.object.height)
         return w_t * h_t
     
+    def __str__(self):
+        return "Rectangle(width={}, height={})".format(self.width,self.height)
+    
 class Square(Rectangle):
     
     def __init__ (self,side):
@@ -51,3 +54,7 @@ class Square(Rectangle):
     def set_height(self, height):
         self.width = height
         self.height = height
+    
+    def __str__(self):
+        return "Square(side={})".format(self.width)
+
