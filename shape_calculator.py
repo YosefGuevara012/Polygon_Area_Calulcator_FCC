@@ -21,13 +21,13 @@ class Rectangle:
     def get_picture(self):
     
         if self.width > 50  or self.height > 50:
-            print('"Too big for picture."')
+          print("Too big for picture.")
+          return "Too big for picture."
         else:
-            figure = (("*" * self.width) + "\n") * self.height
-            print(figure)
-            return(figure)
-
-                
+          figure = (("*" * self.width) + "\n") * self.height
+          print(figure)
+          return(figure)
+      
     def get_amount_inside(self, obj):
         self.object = obj
         w_t = int(self.width / self.object.width)
