@@ -21,10 +21,12 @@ class Rectangle:
     def get_picture(self):
     
         if self.width > 50  or self.height > 50:
+          print("\n")
           print("Too big for picture.")
           return "Too big for picture."
         else:
           figure = (("*" * self.width) + "\n") * self.height
+          print("\n")
           print(figure)
           return(figure)
       
